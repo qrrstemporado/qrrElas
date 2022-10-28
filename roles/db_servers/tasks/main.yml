@@ -117,19 +117,19 @@
 - name: Configure Kibana Add server.host (Ubuntu)
   lineinfile:
     dest: /etc/kibana/kibana.yml
-    line: 'server.host: “0.0.0.0”'
+    line: 'server.host: "0.0.0.0"'
     state: present
 
 - name: Configure Kibana Add server.name (Ubuntu)
   lineinfile:
     dest: /etc/kibana/kibana.yml
-    line: 'server.name: “demo-kibana”'
+    line: 'server.name: "demo-kibana"'
     state: present
 
 - name: Configure Kibana Add elasticsearch.hosts (Ubuntu)
   lineinfile:
     dest: /etc/kibana/kibana.yml
-    line: 'elasticsearch.hosts: [“http://0.0.0.0:9200"]'
+    line: 'elasticsearch.hosts: ["http://0.0.0.0:9200"]'
     state: present
 
 - name: Run daemon-reload for kibana (Ubuntu)
